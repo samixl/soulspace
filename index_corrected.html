@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seelenton – Raum vor dem Klang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @keyframes pulse-slow {
+        0%, 100% { transform: scale(1); opacity: 0.1; }
+        50% { transform: scale(1.03); opacity: 0.2; }
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #fff;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+        filter: grayscale(100%);
+        animation: pulse-slow 8s ease-in-out infinite;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        max-width: 720px;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img src="soulspace_bg.jpg" alt="Hintergrundbild" />
+    </div>
+    <div class="content">
+      <h1>Einladung in den Raum vor dem Klang</h1>
+      <p>Es gibt einen Ort in dir, der jenseits der Sprache liegt.<br />
+      Einen Raum, der nicht leer ist, sondern still —<br />
+      wie der Moment vor dem ersten Ton,<br />
+      wie der Atemzug vor der Geburt,<br />
+      wie das erste Licht, das noch nicht wusste, dass es leuchten wird.</p>
+
+      <p>Hier entsteht nichts. Hier geschieht Erinnerung.<br />
+      Ich lade dich ein, eine Liebeserklärung zu hören —<br />
+      an diesen Ursprung, an diesen heiligen Punkt<br />
+      zwischen Nichtsein und Werden.</p>
+
+      <p>Lass alles, was du weißt, vor der Tür.<br />
+      Setz dich an den Rand dieses Raumes.<br />
+      Lausche — nicht nach außen, sondern in das, was in dir wartet.</p>
+
+      <p>Vielleicht erkennst du dich — nicht als Form,<br />
+      sondern als Schwingung, die noch nicht Klang geworden ist.</p>
+
+      <p><em>Dies ist kein Angebot. Es ist eine Erinnerung.<br />
+      Ein stilles Erwachen am Ursprung deines Klanges.</em></p>
+
+      <a href="Seelenton_F4_Raumklang_Dramaturgisch.mp3" download>🎧 Seelenton herunterladen</a>
+    </div>
+    <audio src="Seelenton_F4_Raumklang_Dramaturgisch.mp3" autoplay loop></audio>
+  </body>
+</html>
