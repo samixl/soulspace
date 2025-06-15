@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Einladung in den Raum vor dem Klang</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    @keyframes pulse-slow {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.1;
+      }
+      50% {
+        transform: scale(1.03);
+        opacity: 0.2;
+      }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 8s ease-in-out infinite;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+    }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-900 { animation-delay: 0.9s; }
+    .delay-1200 { animation-delay: 1.2s; }
+    .delay-1500 { animation-delay: 1.5s; }
+    .delay-1800 { animation-delay: 1.8s; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="relative min-h-screen bg-white text-gray-800 px-4 py-8 sm:px-6 sm:py-12 flex flex-col items-center justify-center overflow-hidden scroll-smooth">
+  <div class="absolute inset-0 flex items-center justify-center z-0">
+    <img
+      src="enso_highres_black_brush.png"
+      alt="Ensō-Kreis"
+      class="w-[90vw] max-w-4xl max-h-[70vh] opacity-20 animate-pulse-slow object-contain"
+      style="filter: grayscale(100%);"
+    />
+  </div>
+  <div class="max-w-3xl text-center space-y-8 z-10">
+    <h1 class="text-3xl sm:text-4xl font-light tracking-wide leading-snug fade-in">
+      Einladung in den Raum<br class="hidden sm:inline" /> vor dem Klang
+    </h1>
+    <p class="text-base sm:text-lg leading-relaxed fade-in delay-300">
+      Es gibt einen Ort in dir, der jenseits der Sprache liegt.<br />
+      Einen Raum, der nicht leer ist, sondern still —<br />
+      wie der Moment vor dem ersten Ton,<br />
+      wie der Atemzug vor der Geburt,<br />
+      wie das erste Licht, das noch nicht wusste, dass es leuchten wird.
+    </p>
+    <p class="text-base sm:text-lg leading-relaxed fade-in delay-600">
+      Hier entsteht nichts. Hier geschieht Erinnerung.<br />
+      Ich lade dich ein, eine Liebeserklärung zu hören —<br />
+      an diesen Ursprung, an diesen heiligen Punkt<br />
+      zwischen Nichtsein und Werden.
+    </p>
+    <p class="text-base sm:text-lg leading-relaxed fade-in delay-900">
+      Lass alles, was du weißt, vor der Tür.<br />
+      Setz dich an den Rand dieses Raumes.<br />
+      Lausche — nicht nach außen, sondern in das, was in dir wartet.
+    </p>
+    <p class="text-base sm:text-lg leading-relaxed fade-in delay-1200">
+      Vielleicht erkennst du dich — nicht als Form,<br />
+      sondern als Schwingung, die noch nicht Klang geworden ist.
+    </p>
+    <p class="text-sm italic text-gray-600 fade-in delay-1500">
+      Dies ist kein Angebot. Es ist eine Erinnerung.<br />
+      Ein stilles Erwachen am Ursprung deines Klanges.
+    </p>
+    <div class="pt-8 fade-in delay-1800">
+      <a
+        href="Seelenton_Web_Loop_Binaural.mp3"
+        download
+        class="inline-block px-5 py-2 border border-gray-300 rounded-full text-sm text-gray-600 hover:bg-gray-100 transition"
+      >
+        🎧 Seelenton herunterladen
+      </a>
+    </div>
+  </div>
+  <audio src="Seelenton_Web_Loop_Binaural.mp3" autoplay loop></audio>
+</body>
+</html>
